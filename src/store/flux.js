@@ -26,6 +26,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 				}
 			},
 
+			// TODO: Work on a proper pagination.
 			getPlanets: async () => {
 				let planetsStored = [];
 				for (let i = 0; i < 6; i++) {
@@ -92,8 +93,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 						"comments": commentsArray,
 					}),
 					headers: {"Content-type": "application/json"}
-				});
-				getActions().getOneDiscussion(discussionId);
+				})
+				return response;
 			}
 		}
 	};

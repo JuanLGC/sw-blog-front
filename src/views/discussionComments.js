@@ -1,5 +1,5 @@
 import { Fragment, useState, useContext, useEffect } from 'react';
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { Header } from '../Components/header';
 import { NavBar } from '../Components/navbar';
 import Modal from 'react-modal'
@@ -11,7 +11,6 @@ export const DiscussionComments = () => {
     const { store, actions } = useContext(Context);
     const [allComments, setAllComments] = useState(store.comment);
     const [modalIsOpen, setModalIsOpen] = useState(false);
-    const [failedClass, setfailedClass] = useState("forum-failed-post");
     const [commentAuthor, setCommentAuthor] = useState("");
     const [commentContent, setCommentContent] = useState("");
     const [arrayOfComments, setArrayOfComments] = useState([])
@@ -60,7 +59,6 @@ export const DiscussionComments = () => {
             </div>
             <Modal className="forum-button-modal" overlayClassName="forum-button-modal-overlay" isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
                     <h5 className="forum-modal-title">What are we talking about today, young padawan?</h5>
-                    <p className={failedClass + " forum-post-message"}>All fields are mandatory</p>
                     <div className="modal-form">
                         <label className="forum-modal-input-label">Your Name</label>
                         <input type="text" className="forum-modal-input" onChange={(e)=>{setCommentAuthor(e.target.value)}}></input>

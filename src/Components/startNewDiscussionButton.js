@@ -17,7 +17,7 @@ export const StartDiscussion = () => {
         if (allDiscussions.length !== store.Forum.length) {
             setAllDiscussions(store.Forum);
         }
-    }, [store.Forum])
+    }, [store.Forum, allDiscussions.length])
 
     Modal.setAppElement('#root');
     return (

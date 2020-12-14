@@ -1,7 +1,6 @@
 import { Fragment } from 'react';
 import '../Styles/forum.css';
 import PropTypes from 'prop-types';
-import { propTypes } from 'react-bootstrap/esm/Image';
 
 export const DiscussionCard = (props) => {
     return (
