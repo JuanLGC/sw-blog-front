@@ -1,0 +1,132 @@
+.forum-button-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.forum-startDiscussion-button {
+    margin: 1.5rem 0;
+    border: none;
+    border-radius: .25rem;
+    background-color: rgb(29, 29, 29);
+    padding: .5rem;
+    color: goldenrod;
+}
+
+.forum-button-modal {
+    width: 30%;
+    min-width: 15rem;
+    background-color: rgb(31, 31, 31);
+    border: solid 1px goldenrod;
+    border-radius: .25rem;
+    color:goldenrod;
+    margin: 3rem auto ;
+}
+
+.forum-button-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-Color: rgba(0, 0, 0, 0.404);
+}
+
+.forum-modal-title{
+    padding: .25rem;
+    text-align: center;
+    margin: .5rem 0;
+}
+
+.modal-form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.forum-modal-input-label {
+    width: 100%;
+}
+.forum-modal-input {
+    width: 100%;
+    margin-bottom: .5rem;
+    border-radius: .25rem;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.modal-button {
+    border: none;
+    border-radius: .25rem;
+    background-color: rgb(14, 14, 14);
+    color: goldenrod;
+    padding: .5rem 1rem;
+    margin: 1rem;
+    
+}
+
+.forum-succesful-post {
+   display: none;
+}
+.forum-failed-post {
+    display: none;
+}
+.forum-post-message{
+    text-align: center;
+    margin: 0 1rem;
+    margin-top: 1.2rem;
+    padding: .5rem;
+    border-radius: .25rem;
+    background-color: rgb(14, 14, 14);
+}
+
+.discussion-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.forum-cards-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: .25rem;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.forum-discussion-card {
+    border: solid 1px transparent;
+    border-radius: .25rem;
+    background-color:  rgba(14, 14, 14, 0.829);
+    color: goldenrod;
+    width: 95%;
+    margin: 1rem 0;
+}
+
+.forum-discussion-card:hover{
+    background-color:  rgb(7, 7, 7);
+    border: solid 1px goldenrod;
+}
+.forum-discussion-card-title{
+    font-size: 1.5rem;
+    padding: .5rem .6rem;
+}
+.forum-discussion-card-description{
+    padding: 0 1rem;
+    color: white;
+}
+
+.forum-cards-container a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.forum-cards-container a:hover {
+    text-decoration: none;
+}

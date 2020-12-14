@@ -1,0 +1,12 @@
+.header-container {
+    width: 100vw;
+    padding: .5rem;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.header-logo-sw {
+    max-width: 7rem;
+    align-self: center;
+}

@@ -1,0 +1,93 @@
+.info-section-container{
+    background-color: rgba(0, 0, 0, 0.74);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem 0;
+    color: #ffc107;
+    
+}
+
+.info-section-title{
+    width: 95vw;
+    border-bottom: solid 1px #ffc107;
+    color: #ffc107;
+}
+
+.info-card-container{
+    display: inline-block;
+    margin: 1rem 1rem;
+    padding-bottom: 1rem;
+    min-width: 15rem;
+    max-width: 15rem;
+    background-color: blue;
+    border-radius: .25rem;
+    overflow: hidden;
+    background-image: url("https://conklinmedia.com/wp-content/uploads/2018/08/Dark-Background-888.png");
+    background-size: cover;
+    /* filter: drop-shadow(0 0 0.30rem white); */
+}
+
+.info-card-container:hover {
+    animation-name: cardGlow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cardGlow {
+    0% {filter: drop-shadow(0 0 0rem white);}
+    /* 25% {filter: drop-shadow(0 0 0.35rem white);} */
+    50% {filter: drop-shadow(0 0 0.40rem white);}
+    /* 75% {filter: drop-shadow(0 0 0.35rem white);} */
+    100% {filter: drop-shadow(0 0 0rem white);}
+  }
+
+
+.card-image {
+    width: 100%;
+    height: 10rem;
+}
+
+.info-card-body-title-text {
+    margin-top: .5rem;
+    padding: .5rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.info-section-scrollable-container {
+    width: 95%;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.info-section-scrollable-container::-webkit-scrollbar {
+    width: 12px;
+    border-radius: 20px ;               
+  }
+  .info-section-scrollable-container::-webkit-scrollbar-track {
+    background: rgb(71, 71, 71); 
+    border-radius: 20px       
+  }
+  .info-section-scrollable-container::-webkit-scrollbar-thumb {
+    background-color: #ce9a00;    
+    border-radius: 20px;       
+    /* border: 3px solid #e6ae07;   */
+  }
+  .info-card-body-button{
+      display: flex;
+      justify-content: space-around;
+      margin-top: 1rem;
+  }
+
+  .info-section-learn-more-button {
+      font-size: 0.84rem;
+      padding: .25rem .4rem;
+      border: none;
+      border-radius: .25rem;
+      background-color: #ce9a00;
+  }
+
+  .info-section-learn-more-button:hover {
+    background-color: #e9af01;
+  }

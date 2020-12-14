@@ -1,0 +1,46 @@
+.comments-title-box {
+    background-color: rgba(14, 14, 14, 0.829);
+    padding: 1rem;
+}
+
+.comments-title-box h2 {
+    color: goldenrod;
+}
+
+.comments-title-box p {
+    color:white;
+}
+
+.comment-content-box{
+    background-color: rgba(14, 14, 14, 0.829);
+    padding: 1rem;
+}
+
+.comment-content-box p {
+    margin: 0;
+}
+
+.comment-author{
+    color: goldenrod;
+}
+
+.comment-content {
+    color: whitesmoke;
+    padding: 0 0 0 1.5rem;
+}
+
+.comment-add-button-box {
+    display: flex;
+    justify-content: center;
+}
+
+.comment-add-button {
+    margin: .5rem 0 0 0;
+    border: none;
+    border-radius: 100%;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0 .7rem .3rem .7rem;
+    font-weight: bolder;
+    background-color:  rgb(14, 14, 14);
+}

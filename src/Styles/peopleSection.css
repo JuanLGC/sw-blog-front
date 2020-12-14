@@ -1,0 +1,34 @@
+.full-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    color: goldenrod;
+}
+.card-container-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 576px) { 
+    .card-container-list {
+        width: 50%;
+    }
+ }
+
+
+@media (min-width: 768px) {  
+    .card-container-list {
+        width: 33.3%;
+    }
+}
+
+
+@media (min-width: 992px) { 
+    .card-container-list {
+        width: 25%;
+    }
+ }
+
+
+@media (min-width: 1200px) {  }
